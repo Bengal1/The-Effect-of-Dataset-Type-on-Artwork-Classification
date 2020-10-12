@@ -17,7 +17,7 @@ from CustomDataSet import PaintingDataset
 # Hyper Parameters #
 learning_rate = 0.0001
 num_epochs = 20
-batch_size = 60
+batch_size = 200
 num_class = 27
 img_size = (224, 224)
 
@@ -38,7 +38,7 @@ class BLNet(nn.Module):
         self.fc1 = nn.Linear(in_features=6272, out_features=228)
         self.fc2 = nn.Linear(in_features=228, out_features=num_class)
 
-        # Batch Normalization  <--------------------
+        # Batch Normalization 
         self.bn1 = nn.BatchNorm2d(32)
         self.bn2 = nn.BatchNorm2d(32)
 
@@ -68,8 +68,8 @@ class ResNet(nn.Module):
 
 
 # Set models
-model1 = BLNet()                # BaseLine CNN
-model2 = ResNet()          # ResNet-18 from scratch
+model1 = BLNet()                   # BaseLine CNN
+model2 = ResNet()                  # ResNet-18 from scratch
 
 # Models name attribute
 model1.name = 'Base Line CNN'
@@ -91,6 +91,9 @@ data_root = 'C:/Users/or8be/OneDrive/Desktop/Electrical Engineering B.Sc/Deep Le
 
 csv_loc = csvs[0]
 
+csv_dict = {csvs[0]: 'Small', csvs[1]: 'Large', csvs[2]: 'Synthetic', csvs[3]: 'Control'}
+
+
 # Transform
 transform = transforms.Compose([transforms.ToPILImage(),
                                 # transforms.Resize((448, 448)),
@@ -100,7 +103,7 @@ transform = transforms.Compose([transforms.ToPILImage(),
                                 transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
                                 ])
 
-# Transform for Synthetic dataset (csvs[2]):
+# Transform for Synthetic dataset (csvs[2]):                                                     # set transforms --> transform_synth
 data_augment =[transforms.RandomHorizontalFlip(p=0.5), transforms.RandomVerticalFlip(p=0.5),
                transforms.RandomRotation(degrees=30), transforms.RandomGrayscale(p=0.5)]
 
@@ -185,7 +188,7 @@ def calculate_performances(loader):
         # create confusion matrix
         for t, p in zip(labels.view(-1), predicted.view(-1)):
             confusion_matrix[t.long(), p.long()] += 1
-        print(confusion_matrix)
+      
     # calculate stats per class
     for cls in range(num_class):
         t_positive = confusion_matrix[cls, cls]                                   # True Positive
@@ -292,7 +295,7 @@ plt.plot(train_accuracy, 'y')       # check if need numpy.linspace????
 plt.plot(validation_accuracy, 'b')
 plt.xlabel('Epoch')
 plt.ylabel('Accuracy')
-plt.title('{}_Accuracy on {} Dataset'.format(model.name, 'Large'))
+plt.title('{}_Accuracy on {} Dataset'.format(model.name, csv_dict[csv_loc]))
 plt.savefig('{}_Accuracy.png'.format(model.name))
 plt.show()
 
