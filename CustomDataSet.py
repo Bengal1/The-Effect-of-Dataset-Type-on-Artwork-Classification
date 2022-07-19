@@ -32,9 +32,8 @@ class PaintingDataset(Dataset):
 
     def __getitem__(self, index):
         img_path = self.annotations.iloc[index, 0]
-        # print(img_path)            # check corrupt files XXXXXXXXX
         image = io.imread(img_path)                                   # load image from source
-        label = torch.tensor(int(self.annotations.iloc[index, 1]))  # get label from file as tensor
+        label = torch.tensor(int(self.annotations.iloc[index, 1]))    # get label from file as tensor
 
         # image = ZeroCenter(pic)                                     # zero-centering the image
 
