@@ -248,7 +248,7 @@ def train():
             correct_train += (predicted == labels).sum().item()
             total_train += labels.size(0)
 
-        ep_loss.append(running_loss / len(train_loader))   # see if valid??? (15000)/len(///) batch size??
+        ep_loss.append(running_loss / len(train_loader)) 
         train_acc.append((100 * correct_train) / total_train)
         validation_acc.append(accuracy(validation_loader))
         print('Epoch: %d of %d, Train Acc: %0.3f, Validation Acc: %0.3f, Loss: %0.3f\n'
@@ -256,7 +256,7 @@ def train():
 
     performances = calculate_performances(test_loader)
 
-    return ep_loss, train_acc, validation_acc, performances    # epoch loss & running_loss????
+    return ep_loss, train_acc, validation_acc, performances
 
 
 ## Run ##
@@ -291,7 +291,7 @@ with open('performance_net.txt', "w", newline='') as file:
 # Plot train & validation accuracy
 
 plt.figure()
-plt.plot(train_accuracy, 'y')       # check if need numpy.linspace????
+plt.plot(train_accuracy, 'y')   
 plt.plot(validation_accuracy, 'b')
 plt.xlabel('Epoch')
 plt.ylabel('Accuracy')
