@@ -24,6 +24,7 @@ Note:
 
 ### ResNet-18
 
+![Proposed-Modified-ResNet-18-architecture-for-Bangla-HCR-In-the-diagram-conv-stands-for](https://github.com/Bengal1/The-Effect-of-Art-Identification-with-Convolutional-Neural-Networks-According-to-The-Difference-in-T/assets/34989887/f9488fe8-64a4-4a34-9723-dee7d49397ff)
 
 
 ## Getting Started
