@@ -46,11 +46,14 @@ Upload the files to python environment. There are 4 location that you would need
 If you would like to use the "CSV_creatoer" set the wanted paths as well. In the main file "Train_file.py" set the path to the csv files of your chosen location.
 
 Operating the "synthetic" dataset:
-First set the path to the aproptiate csv file, "csv_style_synthetic", by set: csv_loc = csvs[2], on line///.
-Next fill in PaintingDataset on line /// in transform argument "transform_synth", like this: PaintingDataset(csv_file=csv_loc, root_dir=data_root, transforms=transform_synth), and you are ready to go.
+First set the path to the aproptiate csv file, "csv_style_synthetic", by set: csv_loc = csvs[2], on the corresponding line.
+Next fill in PaintingDataset on the corresponding line in transform argument "transform_synth", like this: PaintingDataset(csv_file=csv_loc, root_dir=data_root, transforms=transform_synth), and you are ready to go.
 
 ## References
-
+1. ["Artist Identification with Convolutional Neural Networks"](http://cs231n.stanford.edu/reports/2017/pdfs/406.pdf).
+2. [Deep residual learning for image recognition](https://arxiv.org/abs/1512.03385).
+3. [Delving deep into rectifiers: Surpassing human-level performance on imagenet classification](https://arxiv.org/abs/1502.01852).
+4. [Rhythmic brushstrokes distinguish van gogh from his contemporaries: Findings via automated brushstroke extractions](https://ieeexplore.ieee.org/document/6042878).
 
 
 
