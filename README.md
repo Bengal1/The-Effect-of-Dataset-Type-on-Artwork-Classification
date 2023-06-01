@@ -6,8 +6,8 @@ these three dataset are compared with the performance of another experiment, "Ar
 ## Dataset
 these project files contain a file of "csv file creator" which help prepering the data for training.
 
-The source of the data is WikiArt
-Note:
+
+#### WikiArt Notes:
 
 1.The WikiArt dataset can be used only for non-commercial research purpose.
 
