@@ -19,14 +19,17 @@ This project contains the file "CSV_Creator.py" which help prepering the data fo
 ## Models
 
 ### Base Line CNN
+I train a simple CNN from scratch for art style identification. I took the architecture from ["Artist Identification with Convolutional Neural Networks"](http://cs231n.stanford.edu/reports/2017/pdfs/406.pdf). As the name implies, this network serves as a baseline for comparison with the other model. The network is relatively shallow compared to the other network. The network is obviously don't feet to identify complex images, and it's all purpose is to be a reference point to the deeper model. Every layer in the network down-samples the image by a small factor to reduce computational complexity. The downside of this model is that it will not analyze the image small details.
 
 ![BaseLineCNN](https://github.com/Bengal1/The-Effect-of-Art-Identification-with-Convolutional-Neural-Networks-According-to-The-Difference-in-T/assets/34989887/60a595c1-e73e-4cd7-8839-db78aca042ce)
 
 
 ### ResNet-18
+The next network is based on the ResNet-18 architecture from [Torchvision](https://github.com/pytorch/vision). ResNet is a residual neural network that use shortcut connections, shortcut connections are those skipping one or more layers. The ResNet I am using has 18 layers and set with a new fully connected layer to allow for right number of classes predictions, ResNets use residual blocks to ensure that upstream gradients are propagated to lower network layers, aiding in optimization convergence in deep networks.
 
 ![resnet18_modified](https://github.com/Bengal1/The-Effect-of-Art-Identification-with-Convolutional-Neural-Networks-According-to-The-Difference-in-T/assets/34989887/d793daf3-cc8a-4cff-8b3d-a84647d53c91)
 
+## Experiment & Results
 
 ## Getting Started
 
