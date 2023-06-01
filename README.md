@@ -17,12 +17,12 @@ This project contains the file "CSV_Creator.py" which help prepering the data fo
 
 ### Base Line CNN
 
-![BaseLineCNN](https://github.com/Bengal1/The-Effect-of-Art-Identification-with-Convolutional-Neural-Networks-According-to-The-Difference-in-T/assets/34989887/260e557b-48d1-43f8-a16c-dfb8c03b2f3a)
+![BaseLineCNN](https://github.com/Bengal1/The-Effect-of-Art-Identification-with-Convolutional-Neural-Networks-According-to-The-Difference-in-T/assets/34989887/60a595c1-e73e-4cd7-8839-db78aca042ce)
 
 
 ### ResNet-18
 
-![resnet18_modified](https://github.com/Bengal1/The-Effect-of-Art-Identification-with-Convolutional-Neural-Networks-According-to-The-Difference-in-T/assets/34989887/c773a43d-33ec-44c7-91fa-c0dbf50f44f4)
+![resnet18_modified](https://github.com/Bengal1/The-Effect-of-Art-Identification-with-Convolutional-Neural-Networks-According-to-The-Difference-in-T/assets/34989887/d793daf3-cc8a-4cff-8b3d-a84647d53c91)
 
 
 ## Getting Started
