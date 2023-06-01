@@ -4,8 +4,9 @@ in this project I'm comparing three type of dataset. The first dataset, we will 
 these three dataset are compared with the performance of another experiment, "Artist Identification with Convolutional Neural Networks", on two model. Baseline CNN, a relatively shallow network, and ResNet-18.
 
 ## Dataset
-This project contains the file "CSV_Creator.py" which help prepering the data for training.
+Art Style identification is the task of identifying the style of a painting given with no other information about it. This is an important requirement for cataloguing art, especially as art is increasingly digitized. One of the most vast and diverse datasets, WikiArt, has around 250,000 artworks from over 200 different art styles by 3,000 artists.
 
+This project contains the file "CSV_Creator.py" which help prepering the data for training.
 
 ### WikiArt Notes:
 
