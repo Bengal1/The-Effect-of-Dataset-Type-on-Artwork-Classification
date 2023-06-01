@@ -7,13 +7,11 @@ these three dataset are compared with the performance of another experiment, "Ar
 these project files contain a file of "csv file creator" which help prepering the data for training.
 
 
-#### WikiArt Notes:
+### WikiArt Notes:
 
-1.The WikiArt dataset can be used only for non-commercial research purpose.
-
-2.The images in the WikiArt dataset were obtained from WikiArt.org. The authors are neither responsible for the content nor the meaning of these images.
-
-3.By using the WikiArt dataset, you agree to obey the terms and conditions of https://www.wikiart.org/.
+1. The WikiArt dataset can be used only for non-commercial research purpose.
+2. The images in the WikiArt dataset were obtained from WikiArt.org. The authors are neither responsible for the content nor the meaning of these images.
+3. By using the WikiArt dataset, you agree to obey the terms and conditions of https://www.wikiart.org/.
 
 ## Models
 
