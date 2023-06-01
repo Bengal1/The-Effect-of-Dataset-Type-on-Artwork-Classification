@@ -40,17 +40,10 @@ My best result was when I applied the ResNet-18 model on the large dataset and i
 For the results, discussion, analysis and conclusion see the experiment file, "The Effect of Art Identification with Convolutional Neural Networks According to The Difference in The Dataset", in this repository.
 
 ## Getting Started
+In order to compile this project you will need [Pytorch](https://pytorch.org/get-started/locally/) and [Scikit Image](https://scikit-image.org/docs/stable/install.html).
 
-In order to compile this project you will need:
-
-Pytorch - https://pytorch.org/get-started/locally/
-
-Scikit Image - https://scikit-image.org/docs/stable/install.html
-
-Upload the files to python environment.
-
-There are 4 location that you would need to set. the dataset path and 3 csv files paths to there location on your computer.
-If you would like to use th "CSV_creatoer" set the wanted paths as well.
+Upload the files to python environment. There are 4 location that you would need to set. the dataset path and 3 csv files paths to there location on your computer.
+If you would like to use the "CSV_creatoer" set the wanted paths as well.
 
 In the main file " .py" set the path to the csv files of your chosen location.
 
