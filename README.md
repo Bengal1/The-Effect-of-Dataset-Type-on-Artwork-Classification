@@ -36,6 +36,7 @@ All the models and experiments are implemented in [PyTorch](https://github.com/p
 
 ![resultssss](https://github.com/Bengal1/The-Effect-of-Art-Identification-with-Convolutional-Neural-Networks-According-to-The-Difference-in-T/assets/34989887/a2a17a62-ecaf-49ca-86c5-4331c04f9319)
 
+For the results, discussion, analysis and conclusion see the experiment file, "The Effect of Art Identification with Convolutional Neural Networks According to The Difference in The Dataset", in this repository.
 
 ## Getting Started
 
