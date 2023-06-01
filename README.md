@@ -50,7 +50,7 @@ First set the path to the aproptiate csv file, "csv_style_synthetic", by set: cs
 Next fill in PaintingDataset on the corresponding line in transform argument "transform_synth", like this: PaintingDataset(csv_file=csv_loc, root_dir=data_root, transforms=transform_synth), and you are ready to go.
 
 ## References
-1. ["Artist Identification with Convolutional Neural Networks"](http://cs231n.stanford.edu/reports/2017/pdfs/406.pdf).
+1. [Artist Identification with Convolutional Neural Networks](http://cs231n.stanford.edu/reports/2017/pdfs/406.pdf).
 2. [Deep residual learning for image recognition](https://arxiv.org/abs/1512.03385).
 3. [Delving deep into rectifiers: Surpassing human-level performance on imagenet classification](https://arxiv.org/abs/1502.01852).
 4. [Rhythmic brushstrokes distinguish van gogh from his contemporaries: Findings via automated brushstroke extractions](https://ieeexplore.ieee.org/document/6042878).
