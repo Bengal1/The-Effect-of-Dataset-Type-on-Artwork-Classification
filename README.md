@@ -30,6 +30,12 @@ The next network is based on the ResNet-18 architecture from [Torchvision](https
 ![resnet18_modified](https://github.com/Bengal1/The-Effect-of-Art-Identification-with-Convolutional-Neural-Networks-According-to-The-Difference-in-T/assets/34989887/d793daf3-cc8a-4cff-8b3d-a84647d53c91)
 
 ## Experiment & Results
+All the models and experiments are implemented in [PyTorch](https://github.com/pytorch). For the setup, implementation details and evaluation metrics see the experiment file, "The Effect of Art Identification with Convolutional Neural Networks According to The Difference in The Dataset", in this repository.
+
+### Results
+
+![resultssss](https://github.com/Bengal1/The-Effect-of-Art-Identification-with-Convolutional-Neural-Networks-According-to-The-Difference-in-T/assets/34989887/a2a17a62-ecaf-49ca-86c5-4331c04f9319)
+
 
 ## Getting Started
 
@@ -51,6 +57,7 @@ Operating the "synthetic" dataset:
 First set the path to the aproptiate csv file, "csv_style_synthetic", by set: csv_loc = csvs[2], on line///.
 Next fill in PaintingDataset on line /// in transform argument "transform_synth", like this: PaintingDataset(csv_file=csv_loc, root_dir=data_root, transforms=transform_synth), and you are ready to go.
 
+## References
 
 
 
