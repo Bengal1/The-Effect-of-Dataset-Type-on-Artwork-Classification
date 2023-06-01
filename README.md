@@ -33,9 +33,10 @@ The next network is based on the ResNet-18 architecture from [Torchvision](https
 All the models and experiments are implemented in [PyTorch](https://github.com/pytorch). For the setup, implementation details and evaluation metrics see the experiment file, "The Effect of Art Identification with Convolutional Neural Networks According to The Difference in The Dataset", in this repository.
 
 ### Results
-
+The results of the experiment divided to table per dataset, so we can the effects better against the compared dataset. With the same dataset on the ResNet-18, we can notice increase in top-1 and top-3 accuracy, but F1, precision and recall score are the same. On the synthetic dataset we observe an increase of 14% in top-1 accuracy from the small dataset, However, we can notice a decrease in top-3 accuracy.
 ![resultssss](https://github.com/Bengal1/The-Effect-of-Art-Identification-with-Convolutional-Neural-Networks-According-to-The-Difference-in-T/assets/34989887/a2a17a62-ecaf-49ca-86c5-4331c04f9319)
 
+My best result was when I applied the ResNet-18 model on the large dataset and it was significantly higher for top-1 and top-3 accuracy. The large dataset is highly unbalanced and still the synthetic dataset overfitted by 13% and the large dataset overfitted by 9%, when applied on them the ResMet-18.
 For the results, discussion, analysis and conclusion see the experiment file, "The Effect of Art Identification with Convolutional Neural Networks According to The Difference in The Dataset", in this repository.
 
 ## Getting Started
