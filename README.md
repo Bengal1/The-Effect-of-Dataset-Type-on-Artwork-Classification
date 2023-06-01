@@ -15,6 +15,11 @@ Note:
 
 3.By using the WikiArt dataset, you agree to obey the terms and conditions of https://www.wikiart.org/.
 
+## Models
+
+### Base Line CNN
+### ResNet-18
+
 ## Getting Started
 
 In order to compile this project you will need:
