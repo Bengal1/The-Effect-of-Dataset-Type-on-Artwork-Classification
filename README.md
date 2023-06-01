@@ -43,12 +43,9 @@ For the results, discussion, analysis and conclusion see the experiment file, "T
 In order to compile this project you will need [Pytorch](https://pytorch.org/get-started/locally/) and [Scikit Image](https://scikit-image.org/docs/stable/install.html).
 
 Upload the files to python environment. There are 4 location that you would need to set. the dataset path and 3 csv files paths to there location on your computer.
-If you would like to use the "CSV_creatoer" set the wanted paths as well.
-
-In the main file " .py" set the path to the csv files of your chosen location.
+If you would like to use the "CSV_creatoer" set the wanted paths as well. In the main file "Train_file.py" set the path to the csv files of your chosen location.
 
 Operating the "synthetic" dataset:
-
 First set the path to the aproptiate csv file, "csv_style_synthetic", by set: csv_loc = csvs[2], on line///.
 Next fill in PaintingDataset on line /// in transform argument "transform_synth", like this: PaintingDataset(csv_file=csv_loc, root_dir=data_root, transforms=transform_synth), and you are ready to go.
 
