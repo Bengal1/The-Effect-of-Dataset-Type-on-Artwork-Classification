@@ -5,6 +5,7 @@ these three dataset are compared with the performance of another experiment, "Ar
 
 ## Dataset
 Art Style identification is the task of identifying the style of a painting given with no other information about it. This is an important requirement for cataloguing art, especially as art is increasingly digitized. One of the most vast and diverse datasets, WikiArt, has around 250,000 artworks from over 200 different art styles by 3,000 artists.
+My dataset, sorted and modified WikiArt, consists of at list 1,600 paintings per style from 27 art style and total of 100,000 approximately. In this experiment I use four datasets built from the dataset I mentioned above. Every dataset has separated .csv file, and every image is labeled with its style. I split every dataset into training, validation and test sets in 3 ratio 80-10-10 respectively. 
 
 This project contains the file "CSV_Creator.py" which help prepering the data for training.
 ### WikiArt Notes:
