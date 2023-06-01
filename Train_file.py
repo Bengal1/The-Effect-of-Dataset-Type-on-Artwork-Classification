@@ -63,7 +63,7 @@ class ResNet(nn.Module):
 
     def forward(self, x):
         x = self.net(x)
-        x = F.relu(self.fc(x))
+        x = F.softmax(self.fc(x), dim=0)) 
         return x
 
 
