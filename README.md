@@ -18,7 +18,13 @@ Note:
 ## Models
 
 ### Base Line CNN
+
+![BaseLineCNN](https://github.com/Bengal1/The-Effect-of-Art-Identification-with-Convolutional-Neural-Networks-According-to-The-Difference-in-T/assets/34989887/260e557b-48d1-43f8-a16c-dfb8c03b2f3a)
+
+
 ### ResNet-18
+
+
 
 ## Getting Started
 
