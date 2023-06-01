@@ -3,6 +3,7 @@ This project was done as part of a deep learning course at Tel Aviv University. 
 in this project I'm comparing three type of dataset. The first dataset, we will refer to him as the "small" dataset, is the smallest, the data balanced contain 1,600-1,700 per class, total of 45,509 images. The second dataset, we will refer to him as the "large" dataset, is the largest, the dataset is unbalanced I use all the images that I have the smallest class has 1,592 images and the largest class has 13,060 with total of 99,167 images. The third dataset, we will refer to him as the "synthetic" dataset, I took the small dataset and increase the number of images per class with data augmentation to 3,200-3,400 per class with total of 91,018. 
 these three dataset are compared with the performance of another experiment, "Artist Identification with Convolutional Neural Networks", on two model. Baseline CNN, a relatively shallow network, and ResNet-18.
 
+## Dataset
 these project files contain a file of "csv file creator" which help prepering the data for training.
 
 The source of the data is WikiArt
@@ -14,7 +15,7 @@ Note:
 
 3.By using the WikiArt dataset, you agree to obey the terms and conditions of https://www.wikiart.org/.
 
-Getting Started
+## Getting Started
 
 In order to compile this project you will need:
 
