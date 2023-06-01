@@ -3,16 +3,18 @@ This project was done as part of a deep learning course at Tel Aviv University. 
 in this project I'm comparing three type of dataset. The first dataset, we will refer to him as the "small" dataset, is the smallest, the data balanced contain 1,600-1,700 per class, total of 45,509 images. The second dataset, we will refer to him as the "large" dataset, is the largest, the dataset is unbalanced I use all the images that I have the smallest class has 1,592 images and the largest class has 13,060 with total of 99,167 images. The third dataset, we will refer to him as the "synthetic" dataset, I took the small dataset and increase the number of images per class with data augmentation to 3,200-3,400 per class with total of 91,018. 
 these three dataset are compared with the performance of another experiment, "Artist Identification with Convolutional Neural Networks", on two model. Baseline CNN, a relatively shallow network, and ResNet-18.
 
-## Dataset
+## Database
 Art Style identification is the task of identifying the style of a painting given with no other information about it. This is an important requirement for cataloguing art, especially as art is increasingly digitized. One of the most vast and diverse datasets, WikiArt, has around 250,000 artworks from over 200 different art styles by 3,000 artists.
-My dataset, sorted and modified WikiArt, consists of at list 1,600 paintings per style from 27 art style and total of 100,000 approximately. In this experiment I use four datasets built from the dataset I mentioned above. Every dataset has separated .csv file, and every image is labeled with its style. I split every dataset into training, validation and test sets in 3 ratio 80-10-10 respectively. 
+My dataset, sorted and modified WikiArt, consists of at list 1,600 paintings per style from 27 art style and total of 100,000 approximately. 
+In this experiment I use four datasets (Control, Small, Large, Synthetic) built from the dataset I mentioned above. Every dataset has separated .csv file, and every image is labeled with its style. I split every dataset into training, validation and test sets in 3 ratio 80-10-10 respectively.
+The "control" dataset will be the referenced dataset to ["Artist Identification with Convolutional Neural Networks"](http://cs231n.stanford.edu/reports/2017/pdfs/406.pdf). The "small" dataset is balanced and contain 1,600-1,700 per class, total of 45,509 images. The "large" dataset is unbalanced I have use all the images in in the database of the selected classes, the smallest class has 1,592 images, and the largest class has 13,060 with total of 99,167 images. In the "synthetic" dataset, I took the small dataset and increase the number of images per class with data augmentation to 3,200-3,400 per class with total of 91,018. which make it large and balanced.
 
 This project contains the file "CSV_Creator.py" which help prepering the data for training.
 ### WikiArt Notes:
 
 1. The WikiArt dataset can be used only for non-commercial research purpose.
 2. The images in the WikiArt dataset were obtained from WikiArt.org. The authors are neither responsible for the content nor the meaning of these images.
-3. By using the WikiArt dataset, you agree to obey the terms and conditions of https://www.wikiart.org/.
+3. By using the WikiArt dataset, you agree to obey the terms and conditions of [WikiArt.org](https://www.wikiart.org/).
 
 ## Models
 
